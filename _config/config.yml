@@ -1,3 +1,6 @@
 ---
 Name: silverstripe-frontend-forms
 ---
+Syntro\SilverstripeFrontendForms\Forms\CheckboxField:
+  default_classes: ['form-check-input']
+  default_holder_classes: ['form-check']
