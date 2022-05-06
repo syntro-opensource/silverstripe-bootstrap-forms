@@ -15,6 +15,14 @@ class CheckboxField extends BackendCheckboxField
 
     use HolderClass;
 
+    /**
+     * Ensures that the methods are wrapped in the correct type and
+     * values are safely escaped while rendering in the template.
+     * @var array
+     */
+    private static $casting = [
+        'Title' => 'HTMLText'
+    ];
 
     /**
      * Creates a new field.
