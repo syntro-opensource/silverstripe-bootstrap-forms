@@ -4,5 +4,5 @@
 			$SmallFieldHolder
 	<% end_loop %>
   <% include Syntro/SilverstripeBootstrapForms/Forms/Includes/Description %>
-  <% include Syntro/SilverstripeBootstrapForms/Forms/Includes/Message %>
+  <%-- <% include Syntro/SilverstripeBootstrapForms/Forms/Includes/Message %> --%>
 </div>

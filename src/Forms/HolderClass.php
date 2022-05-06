@@ -119,4 +119,20 @@ trait HolderClass
 
         return $this;
     }
+
+    /**
+     * extraClass - adds the default bootstrap invalid class if a validation error occurs
+     *
+     * @return string
+     */
+    public function extraClass()
+    {
+        $classes = parent::extraClass();
+        $message = $this->getMessage();
+        if ($message && $this->getMessageType() == 'validation') {
+            $classes .= ' is-invalid';
+        }
+
+        return $classes;
+    }
 }
