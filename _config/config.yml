@@ -5,5 +5,20 @@ Syntro\SilverstripeFrontendForms\Forms\CheckboxField:
   default_classes: ['form-check-input']
   default_holder_classes: ['form-check']
 
+Syntro\SilverstripeFrontendForms\Forms\DropdownField:
+  default_classes: ['form-select']
+
+Syntro\SilverstripeFrontendForms\Forms\EmailField:
+  default_classes: ['form-control']
+
+Syntro\SilverstripeFrontendForms\Forms\FieldGroup:
+  default_classes: ['row']
+
+Syntro\SilverstripeFrontendForms\Forms\OptionsetField:
+  default_classes: ['form-check']
+
 Syntro\SilverstripeFrontendForms\Forms\TextareaField:
+  default_classes: ['form-control']
+
+Syntro\SilverstripeFrontendForms\Forms\TextField:
   default_classes: ['form-control']
