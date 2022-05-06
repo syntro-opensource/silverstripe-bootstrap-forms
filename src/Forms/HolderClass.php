@@ -73,7 +73,7 @@ trait HolderClass
     public function hasHolderClass($class)
     {
         //split at white space
-        $classes = preg_split('/\s+/', $class ?? '');
+        $classes = preg_split('/\s+/', $class);
         foreach ($classes as $class) {
             if (!isset($this->holderClasses[$class])) {
                 return false;
@@ -93,7 +93,7 @@ trait HolderClass
      */
     public function addHolderClass($class)
     {
-        $classes = preg_split('/\s+/', $class ?? '');
+        $classes = preg_split('/\s+/', $class);
 
         foreach ($classes as $class) {
             $this->holderClasses[$class] = $class;
@@ -111,7 +111,7 @@ trait HolderClass
      */
     public function removeHolderClass($class)
     {
-        $classes = preg_split('/\s+/', $class ?? '');
+        $classes = preg_split('/\s+/', $class);
 
         foreach ($classes as $class) {
             unset($this->holderClasses[$class]);
