@@ -12,6 +12,11 @@ class DemoTest extends SapphireTest
 {
     protected static $fixture_file = './fixture.yml';
 
+    /**
+     * testDemo
+     *
+     * @return void
+     */
     public function testDemo()
     {
         $this->assertEquals(2, 1+1);

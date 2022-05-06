@@ -19,7 +19,7 @@ class CheckboxSetField extends BackendCheckboxSetField
      *
      * @param string            $name   The field name
      * @param string            $title  The field title
-     * @param array|ArrayAccess $source A map of the dropdown items
+     * @param array|\ArrayAccess $source A map of the dropdown items
      * @param mixed             $value  The current value
      */
     function __construct($name, $title = null, $source = [], $value = null)

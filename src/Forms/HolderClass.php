@@ -11,7 +11,7 @@ trait HolderClass
 
     /**
      * Stores the css-classes for the field holder
-     * @var array
+     * @var array|null
      */
     protected $holderClasses;
 
