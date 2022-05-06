@@ -1,6 +1,6 @@
 <?php
 
-namespace Syntro\SilverstripeFrontendForms\Forms;
+namespace Syntro\SilverstripeBootstrapForms\Forms;
 
 /**
  * Adds the capability to modify a class on the holder
@@ -67,7 +67,7 @@ trait HolderClass
      * Check if a CSS-class has been added to the field holder.
      *
      * @param string $class A string containing a classname or several class
-     * names delimited by a single space.
+     *                      names delimited by a single space.
      * @return boolean True if all of the classnames passed in have been added.
      */
     public function hasHolderClass($class)

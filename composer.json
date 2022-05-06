@@ -1,5 +1,5 @@
 {
-    "name": "syntro/silverstripe-frontend-forms",
+    "name": "syntro/silverstripe-bootstrap-forms",
     "description": "Silverstripe module adding formfields for use in the frontend",
     "type": "silverstripe-vendormodule",
     "authors": [
@@ -26,8 +26,8 @@
     "license": "BSD-3-Clause",
     "autoload": {
         "psr-4": {
-            "Syntro\\SilverstripeFrontendForms\\": "src/",
-            "Syntro\\SilverstripeFrontendForms\\Tests\\": "tests/"
+            "Syntro\\SilverstripeBootstrapForms\\": "src/",
+            "Syntro\\SilverstripeBootstrapForms\\Tests\\": "tests/"
         }
     },
     "scripts": {

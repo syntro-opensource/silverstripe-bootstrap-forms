@@ -1,24 +1,24 @@
 ---
 Name: silverstripe-frontend-forms
 ---
-Syntro\SilverstripeFrontendForms\Forms\CheckboxField:
+Syntro\SilverstripeBootstrapForms\Forms\CheckboxField:
   default_classes: ['form-check-input']
   default_holder_classes: ['form-check']
 
-Syntro\SilverstripeFrontendForms\Forms\DropdownField:
+Syntro\SilverstripeBootstrapForms\Forms\DropdownField:
   default_classes: ['form-select']
 
-Syntro\SilverstripeFrontendForms\Forms\EmailField:
+Syntro\SilverstripeBootstrapForms\Forms\EmailField:
   default_classes: ['form-control']
 
-Syntro\SilverstripeFrontendForms\Forms\FieldGroup:
+Syntro\SilverstripeBootstrapForms\Forms\FieldGroup:
   default_classes: ['row']
 
-Syntro\SilverstripeFrontendForms\Forms\OptionsetField:
+Syntro\SilverstripeBootstrapForms\Forms\OptionsetField:
   default_classes: ['form-check']
 
-Syntro\SilverstripeFrontendForms\Forms\TextareaField:
+Syntro\SilverstripeBootstrapForms\Forms\TextareaField:
   default_classes: ['form-control']
 
-Syntro\SilverstripeFrontendForms\Forms\TextField:
+Syntro\SilverstripeBootstrapForms\Forms\TextField:
   default_classes: ['form-control']
