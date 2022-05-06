@@ -2,7 +2,7 @@ style: github
 template: CHANGELOG.tpl.md
 info:
   title: CHANGELOG
-  repository_url: https://github.com/syntro-opensource/silverstripe-frontend-forms
+  repository_url: https://github.com/syntro-opensource/silverstripe-bootstrap-forms
 options:
   commits:
     filters:

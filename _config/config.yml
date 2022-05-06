@@ -1,5 +1,5 @@
 ---
-Name: silverstripe-frontend-forms
+Name: silverstripe-bootstrap-forms
 ---
 Syntro\SilverstripeBootstrapForms\Forms\CheckboxField:
   default_classes: ['form-check-input']
