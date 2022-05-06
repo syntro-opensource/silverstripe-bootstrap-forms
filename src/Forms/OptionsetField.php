@@ -17,10 +17,10 @@ class OptionsetField extends BackendOptionsetField
     /**
      * Returns an input field.
      *
-     * @param string            $name   The field name
-     * @param string            $title  The field title
+     * @param string             $name   The field name
+     * @param string             $title  The field title
      * @param array|\ArrayAccess $source A map of the dropdown items
-     * @param mixed             $value  The current value
+     * @param mixed              $value  The current value
      */
     function __construct($name, $title = null, $source = [], $value = null)
     {
