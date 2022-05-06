@@ -22,6 +22,33 @@ trait HolderClass
     private static $default_holder_classes = [];
 
     /**
+     * Compiles all CSS-classes. Optionally includes a "form-group--no-label" class if no title was set on the
+     * FormField.
+     *
+     * Uses {@link Message()} and {@link MessageType()} to add validation error classes which can
+     * be used to style the contained tags.
+     *
+     * @return string
+     */
+    public function holderClass()
+    {
+        $classes = [];
+
+        if ($this->holderClasses) {
+            $classes = array_merge(
+                $classes,
+                array_values($this->holderClasses ?? [])
+            );
+        }
+
+        if (!$this->Title()) {
+            $classes[] = 'form-holder--no-label';
+        }
+
+        return implode(' ', $classes);
+    }
+
+    /**
      * Set up the default classes for the form. This is done on construct so that the default classes can be removed
      * after instantiation
      * @return void
