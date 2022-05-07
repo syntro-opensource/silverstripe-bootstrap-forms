@@ -1,1 +1,3 @@
-de: {}
+de:
+  Syntro\SilverstripeBootstrapForms\Forms\PhoneField:
+    VALIDATEMAXLENGTH: Bitte geben Sie eine gültige Telefonnummer ein

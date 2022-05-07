@@ -22,3 +22,6 @@ Syntro\SilverstripeBootstrapForms\Forms\TextareaField:
 
 Syntro\SilverstripeBootstrapForms\Forms\TextField:
   default_classes: ['form-control']
+
+Syntro\SilverstripeBootstrapForms\Forms\PhoneField:
+  default_classes: ['form-control']
