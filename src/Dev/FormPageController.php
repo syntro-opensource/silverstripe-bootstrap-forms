@@ -19,7 +19,8 @@ use Syntro\SilverstripeBootstrapForms\Forms\TextField;
 use Syntro\SilverstripeBootstrapForms\Forms\FieldGroup;
 
 /**
- *
+ * demo controller
+ * @author Matthias Leutenegger
  */
 class FormPageController extends ContentController implements TestOnly
 {
@@ -57,5 +58,4 @@ class FormPageController extends ContentController implements TestOnly
 
         return $form;
     }
-
 }
