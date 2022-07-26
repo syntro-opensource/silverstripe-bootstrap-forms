@@ -26,6 +26,7 @@ class FormPageController extends ContentController implements TestOnly
 {
     /**
      * Defines methods that can be called directly
+     * @config
      * @var array
      */
     private static $allowed_actions = [
@@ -66,6 +67,13 @@ class FormPageController extends ContentController implements TestOnly
         return $form;
     }
 
+    /**
+     * submit - submitted form
+     *
+     * @param  array $data submitted Data
+     * @param  Form  $form original form
+     * @return mixed
+     */
     public function submit($data, Form $form)
     {
         $form->sessionMessage('Hello.', 'success');
