@@ -1,0 +1,4 @@
+Syntro\SilverstripeBootstrapForms\Dev\FormPage:
+  page:
+    Title: Form Page
+    URLSegment: form
