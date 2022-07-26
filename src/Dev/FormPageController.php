@@ -24,6 +24,13 @@ use Syntro\SilverstripeBootstrapForms\Forms\FieldGroup;
  */
 class FormPageController extends ContentController implements TestOnly
 {
+    /**
+     * Defines methods that can be called directly
+     * @var array
+     */
+    private static $allowed_actions = [
+        'Form' => true
+    ];
 
     /**
      * Form
@@ -52,10 +59,17 @@ class FormPageController extends ContentController implements TestOnly
         $textareafield->addHolderClass('textareafieldholderclass')->addExtraClass('textareafieldextraclass');
         $textfield->addHolderClass('textfieldholderclass')->addExtraClass('textfieldextraclass');
 
-        $actions = new FieldList();
+        $actions = new FieldList(FormAction::create('submit', 'Submit'));
         $required = new RequiredFields('required');
         $form = new Form($this, 'Form', $fields, $actions, $required);
 
         return $form;
+    }
+
+    public function submit($data, Form $form)
+    {
+        $form->sessionMessage('Hello.', 'success');
+
+        return $this->redirectBack();
     }
 }

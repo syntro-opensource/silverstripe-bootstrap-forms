@@ -1,6 +1,6 @@
 <?php
 
-namespace Syntro\SilverstripeKlaro\Tests;
+namespace Syntro\SilverstripeBootstrapForms\Tests;
 
 use SilverStripe\Dev\FunctionalTest;
 use Syntro\SilverstripeBootstrapForms\Dev\FormPage;
