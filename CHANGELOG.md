@@ -8,6 +8,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+<a name="1.0.2"></a>
+## [1.0.2] - 2024-01-08
+### 🍰 Added
+- ReadonlyField ([#4](https://github.com/syntro-opensource/silverstripe-bootstrap-forms/issues/4))
+
+
 <a name="1.0.1"></a>
 ## [1.0.1] - 2023-12-18
 ### 🍰 Added
@@ -33,5 +39,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Merge pull request [#2](https://github.com/syntro-opensource/silverstripe-bootstrap-forms/issues/2) from syntro-opensource/dependabot/github_actions/codecov/codecov-action-3.1.0
 
 
-[Unreleased]: https://github.com/syntro-opensource/silverstripe-bootstrap-forms/compare/1.0.1...HEAD
+[Unreleased]: https://github.com/syntro-opensource/silverstripe-bootstrap-forms/compare/1.0.2...HEAD
+[1.0.2]: https://github.com/syntro-opensource/silverstripe-bootstrap-forms/compare/1.0.1...1.0.2
 [1.0.1]: https://github.com/syntro-opensource/silverstripe-bootstrap-forms/compare/1.0.0...1.0.1
