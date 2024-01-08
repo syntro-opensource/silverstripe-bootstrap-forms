@@ -17,6 +17,7 @@ use Syntro\SilverstripeBootstrapForms\Forms\PhoneField;
 use Syntro\SilverstripeBootstrapForms\Forms\TextareaField;
 use Syntro\SilverstripeBootstrapForms\Forms\TextField;
 use Syntro\SilverstripeBootstrapForms\Forms\FieldGroup;
+use Syntro\SilverstripeBootstrapForms\Forms\ReadonlyField;
 
 /**
  * demo controller
@@ -47,6 +48,7 @@ class FormPageController extends ContentController implements TestOnly
             $emailfield = EmailField::create('emailfield', 'emailfield'),
             $optionsetfield = OptionsetField::create('optionsetfield', 'optionsetfield', ['a' => 'value a', 'b' => 'value b']),
             $phonefield = PhoneField::create('phonefield', 'phonefield'),
+            $readonlyfield = ReadonlyField::create('readonlyfield', 'readonlyfield'),
             $textareafield = TextareaField::create('textareafield', 'textareafield'),
             $textfield = TextField::create('textfield', 'textfield'),
         );
@@ -57,6 +59,7 @@ class FormPageController extends ContentController implements TestOnly
         $emailfield->addHolderClass('emailfieldholderclass')->addExtraClass('emailfieldextraclass');
         $optionsetfield->addHolderClass('optionsetfieldholderclass')->addExtraClass('optionsetfieldextraclass');
         $phonefield->addHolderClass('phonefieldholderclass')->addExtraClass('phonefieldextraclass');
+        $readonlyfield->addHolderClass('readonlyfieldholderclass')->addExtraClass('readonlyfieldextraclass');
         $textareafield->addHolderClass('textareafieldholderclass')->addExtraClass('textareafieldextraclass');
         $textfield->addHolderClass('textfieldholderclass')->addExtraClass('textfieldextraclass');
 
