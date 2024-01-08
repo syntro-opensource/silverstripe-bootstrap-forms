@@ -154,7 +154,7 @@ class RenderFormFieldsTest extends FunctionalTest
 
         $this->assertStringContainsString('<div id="Form_Form_readonlyfield_Holder" class="readonlyfieldholderclass">', $body);
         $this->assertStringContainsString('<label class="form-label" for="Form_Form_readonlyfield">readonlyfield</label>', $body);
-        $this->assertStringContainsString('<input type="Form_Form_readonlyfield_Holder" class="readonlyfieldholderclass">', $body);
+        $this->assertStringContainsString('<span id="Form_Form_readonlyfield" class="readonly"></span>', $body);
     }
 
     /**
