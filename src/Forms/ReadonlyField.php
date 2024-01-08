@@ -22,7 +22,7 @@ class ReadonlyField extends BackendReadonlyField
    *
    *
    */
-    function __construct($name, $title = null, $value = '')
+    function __construct($name, $title = null, $value = null)
     {
         $this->setFieldHolderTemplate('Syntro\\SilverstripeBootstrapForms\\Forms\\FormField_holder');
         $this->setSmallFieldHolderTemplate('Syntro\\SilverstripeBootstrapForms\\Forms\\FormField_holder_small');
