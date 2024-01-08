@@ -8,10 +8,11 @@ use Syntro\SilverstripeBootstrapForms\Forms\CheckboxField;
 use Syntro\SilverstripeBootstrapForms\Forms\CheckboxSetField;
 use Syntro\SilverstripeBootstrapForms\Forms\DropdownField;
 use Syntro\SilverstripeBootstrapForms\Forms\EmailField;
+use Syntro\SilverstripeBootstrapForms\Forms\FieldGroup;
 use Syntro\SilverstripeBootstrapForms\Forms\OptionsetField;
+use Syntro\SilverstripeBootstrapForms\Forms\ReadonlyField;
 use Syntro\SilverstripeBootstrapForms\Forms\TextareaField;
 use Syntro\SilverstripeBootstrapForms\Forms\TextField;
-use Syntro\SilverstripeBootstrapForms\Forms\FieldGroup;
 
 /**
  * Test the form fields generation
@@ -143,6 +144,16 @@ class RenderFormFieldsTest extends FunctionalTest
         $this->assertStringContainsString('<input type="tel" name="phonefield" class="phone form-control phonefieldextraclass" id="Form_Form_phonefield" />', $body);
     }
 
+    public function testReadonlyFieldRendering()
+    {
+        $formPage = $this->objFromFixture(FormPage::class, 'page');
+        $formPage->copyVersionToStage('Stage', 'Live');
+
+        $page = $this->get('/form');
+        $body = $page->getBody();
+
+        
+    }
 
     /**
      * testTextareaFieldRendering - description
