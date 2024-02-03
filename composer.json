@@ -9,7 +9,7 @@
         }
     ],
     "require": {
-        "php": "^7.4.0 || ^8.1",
+        "php": "^7.4.0 || ^8",
         "silverstripe/cms": "^4 || ^5",
         "silverstripe/framework": "^4 || ^5",
         "giggsey/libphonenumber-for-php": "^8.0"
