@@ -17,7 +17,7 @@
     "require-dev": {
         "squizlabs/php_codesniffer": "^3.0",
         "syntro/silverstripe-phpstan": "^1",
-        "phpunit/phpunit": "^9.4"
+        "phpunit/phpunit": "^11.2"
     },
     "keywords": [
         "silverstripe",
