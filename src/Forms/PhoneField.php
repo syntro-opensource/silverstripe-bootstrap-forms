@@ -82,29 +82,4 @@ class PhoneField extends FormField
             $attributes
         );
     }
-
-    /**
-     * Validate this field
-     *
-     * @param Validator $validator the validator
-     * @return bool
-     */
-    public function validate($validator)
-    {
-        $valid = true;
-        if (!preg_match("/^\+?[0-9a-zA-Z\-\s]*[\,\#]?[0-9\-\s]*$/", $this->value)) {
-            $name = strip_tags($this->Title() ? $this->Title() : $this->getName());
-            $validator->validationError(
-                $this->name,
-                _t(
-                    __CLASS__ . '.VALIDATEMAXLENGTH',
-                    'Please enter a valid phone number'
-                ),
-                "validation"
-            );
-            $valid = false;
-        }
-        $this->extend('updateValidate', $valid, $validator);
-        return $valid;
-    }
 }
