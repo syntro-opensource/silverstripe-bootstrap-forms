@@ -17,7 +17,7 @@
         "silverstripe/cms": "^5 || ^6",
         "squizlabs/php_codesniffer": "^3.0",
         "cambis/silverstan": "^2.0",
-        "phpunit/phpunit": "^9.4"
+        "phpunit/phpunit": "^9.4 || ^10"
     },
     "keywords": [
         "silverstripe",
