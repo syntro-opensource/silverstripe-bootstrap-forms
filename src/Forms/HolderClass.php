@@ -129,7 +129,7 @@ trait HolderClass
     {
         $classes = parent::extraClass();
         $message = $this->getMessage();
-        if ($message && $this->getMessageType() == 'validation') {
+        if ($message && ($this->getMessageType() == 'validation' || $this->getMessageType() == 'error')) {
             $classes .= ' is-invalid';
         }
 
