@@ -41,7 +41,7 @@ class FormPageController extends ContentController implements TestOnly
      */
     public function Form()
     {
-        $fields = new FieldList(
+        $fields = FieldList::create(
             $checkboxfield = CheckboxField::create('checkboxfield', 'checkboxfield'),
             $checkboxsetfield = CheckboxSetField::create('checkboxsetfield', 'checkboxsetfield', ['a' => 'value a', 'b' => 'value b']),
             $dropdownfield = DropdownField::create('dropdownfield', 'dropdownfield', ['a' => 'value a', 'b' => 'value b']),
@@ -63,9 +63,9 @@ class FormPageController extends ContentController implements TestOnly
         $textareafield->addHolderClass('textareafieldholderclass')->addExtraClass('textareafieldextraclass');
         $textfield->addHolderClass('textfieldholderclass')->addExtraClass('textfieldextraclass');
 
-        $actions = new FieldList(FormAction::create('submit', 'Submit'));
-        $required = new RequiredFields('required');
-        $form = new Form($this, 'Form', $fields, $actions, $required);
+        $actions = FieldList::create(FormAction::create('submit', 'Submit'));
+        $required = RequiredFields::create('required');
+        $form = Form::create($this, 'Form', $fields, $actions, $required);
 
         return $form;
     }
