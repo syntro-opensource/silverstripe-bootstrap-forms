@@ -1,25 +1,26 @@
 
 <phpunit
     bootstrap="vendor/silverstripe/framework/tests/bootstrap.php"
-	colors="true"
-	backupGlobals="false"
-	backupStaticAttributes="false"
-	beStrictAboutChangesToGlobalState="true"
-	beStrictAboutOutputDuringTests="true"
-	beStrictAboutTestsThatDoNotTestAnything="true"
-	beStrictAboutTodoAnnotatedTests="true"
-	failOnRisky="true"
-	failOnWarning="true"
+    colors="true"
+    backupGlobals="false"
+    backupStaticProperties="false"
+    beStrictAboutChangesToGlobalState="true"
+    beStrictAboutOutputDuringTests="true"
+    beStrictAboutTestsThatDoNotTestAnything="true"
+    failOnRisky="true"
+    failOnWarning="true"
 >
     <testsuite name="Default">
         <directory>tests</directory>
     </testsuite>
-    <coverage>
+
+    <source>
         <include>
-            <directory suffix=".php">src</directory>
+            <directory suffix=".php">./src</directory>
         </include>
         <exclude>
-            <directory suffix=".php">vendor/</directory>
+            <directory suffix=".php">vendor</directory>
+            <directory suffix=".php">./src/Dev</directory>
         </exclude>
-    </coverage>
+    </source>
 </phpunit>
