@@ -7,7 +7,7 @@ use SilverStripe\CMS\Controllers\ContentController;
 use SilverStripe\Forms\FieldList;
 use SilverStripe\Forms\Form;
 use SilverStripe\Forms\FormAction;
-use SilverStripe\Forms\RequiredFields;
+use SilverStripe\Forms\Validation\RequiredFieldsValidator;
 use Syntro\SilverstripeBootstrapForms\Forms\CheckboxField;
 use Syntro\SilverstripeBootstrapForms\Forms\CheckboxSetField;
 use Syntro\SilverstripeBootstrapForms\Forms\DropdownField;
@@ -64,7 +64,7 @@ class FormPageController extends ContentController implements TestOnly
         $textfield->addHolderClass('textfieldholderclass')->addExtraClass('textfieldextraclass');
 
         $actions = FieldList::create(FormAction::create('submit', 'Submit'));
-        $required = RequiredFields::create('required');
+        $required = RequiredFieldsValidator::create(['required']);
         $form = Form::create($this, 'Form', $fields, $actions, $required);
 
         return $form;

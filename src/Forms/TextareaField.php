@@ -19,7 +19,7 @@ class TextareaField extends BackendTextareaField
      * Creates a new field.
      *
      * @param string                                      $name  The internal field name, passed to forms.
-     * @param null|string|\SilverStripe\View\ViewableData $title The human-readable field label.
+     * @param null|string|\SilverStripe\Model\ModelData   $title The human-readable field label.
      * @param mixed                                       $value The value of the field.
      */
     function __construct($name, $title = null, $value = null)
