@@ -23,7 +23,7 @@ on:
       - .htaccess
       - '**.md'
     branches:
-      - '6'
+      - 'master'
 
 jobs:
   silverstripe-module-5:
