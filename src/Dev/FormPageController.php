@@ -7,7 +7,7 @@ use SilverStripe\CMS\Controllers\ContentController;
 use SilverStripe\Forms\FieldList;
 use SilverStripe\Forms\Form;
 use SilverStripe\Forms\FormAction;
-use SilverStripe\Forms\RequiredFields;
+use SilverStripe\Forms\Validation\RequiredFieldsValidator;
 use Syntro\SilverstripeBootstrapForms\Forms\CheckboxField;
 use Syntro\SilverstripeBootstrapForms\Forms\CheckboxSetField;
 use Syntro\SilverstripeBootstrapForms\Forms\DropdownField;
@@ -41,7 +41,7 @@ class FormPageController extends ContentController implements TestOnly
      */
     public function Form()
     {
-        $fields = new FieldList(
+        $fields = FieldList::create(
             $checkboxfield = CheckboxField::create('checkboxfield', 'checkboxfield'),
             $checkboxsetfield = CheckboxSetField::create('checkboxsetfield', 'checkboxsetfield', ['a' => 'value a', 'b' => 'value b']),
             $dropdownfield = DropdownField::create('dropdownfield', 'dropdownfield', ['a' => 'value a', 'b' => 'value b']),
@@ -63,9 +63,9 @@ class FormPageController extends ContentController implements TestOnly
         $textareafield->addHolderClass('textareafieldholderclass')->addExtraClass('textareafieldextraclass');
         $textfield->addHolderClass('textfieldholderclass')->addExtraClass('textfieldextraclass');
 
-        $actions = new FieldList(FormAction::create('submit', 'Submit'));
-        $required = new RequiredFields('required');
-        $form = new Form($this, 'Form', $fields, $actions, $required);
+        $actions = FieldList::create(FormAction::create('submit', 'Submit'));
+        $required = RequiredFieldsValidator::create(['required']);
+        $form = Form::create($this, 'Form', $fields, $actions, $required);
 
         return $form;
     }

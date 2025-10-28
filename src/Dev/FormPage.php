@@ -11,5 +11,10 @@ use SilverStripe\CMS\Model\SiteTree;
  */
 class FormPage extends SiteTree implements TestOnly
 {
-
+    /**
+     * Defines the database table name
+     *  @var string
+     * @config
+     */
+    private static $table_name = 'FormPage';
 }
