@@ -8,6 +8,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+<a name="6.0.0"></a>
+## [6.0.0] - 2025-10-28
+### 🍰 Added
+- Silverstripe 6 Support ([#10](https://github.com/syntro-opensource/silverstripe-bootstrap-forms/issues/10))
+
+### 🗑 Removed
+- validate method from PhoneField
+
+
 <a name="1.0.4"></a>
 ## [1.0.4] - 2024-02-03
 ### 🔧 Changed
@@ -51,7 +60,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Merge pull request [#2](https://github.com/syntro-opensource/silverstripe-bootstrap-forms/issues/2) from syntro-opensource/dependabot/github_actions/codecov/codecov-action-3.1.0
 
 
-[Unreleased]: https://github.com/syntro-opensource/silverstripe-bootstrap-forms/compare/1.0.4...HEAD
+[Unreleased]: https://github.com/syntro-opensource/silverstripe-bootstrap-forms/compare/6.0.0...HEAD
+[6.0.0]: https://github.com/syntro-opensource/silverstripe-bootstrap-forms/compare/1.0.4...6.0.0
 [1.0.4]: https://github.com/syntro-opensource/silverstripe-bootstrap-forms/compare/1.0.3...1.0.4
 [1.0.3]: https://github.com/syntro-opensource/silverstripe-bootstrap-forms/compare/1.0.2...1.0.3
 [1.0.2]: https://github.com/syntro-opensource/silverstripe-bootstrap-forms/compare/1.0.1...1.0.2
