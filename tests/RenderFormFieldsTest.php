@@ -197,7 +197,7 @@ class RenderFormFieldsTest extends FunctionalTest
     public function testNumericFieldRendering()
     {
         $formPage = $this->objFromFixture(FormPage::class, 'page');
-        $formPage->copyVersionToState('Stage', 'Live');
+        $formPage->copyVersionToStage('Stage', 'Live');
 
         $page = $this->get('/form');
         $body = $page->getBody();
