@@ -209,7 +209,7 @@ class RenderFormFieldsTest extends FunctionalTest
 
         $this->assertStringContainsString('<div id="Form_Form_numericfield_Holder" class="numericfieldholderclass">', $body);
         $this->assertStringContainsString('<label class="form-label" for="Form_Form_numericfield">numericfield</label>', $body);
-        $this->assertStringContainsString('<input type="text" name="numericfield" class="numeric text form-control textfieldextraclass" id="Form_Form_numericfield" />', $body);
+        $this->assertStringContainsString('<input type="text" name="numericfield" class="numeric text form-control numericfieldextraclass" id="Form_Form_numericfield" />', $body);
     }
 
 }
