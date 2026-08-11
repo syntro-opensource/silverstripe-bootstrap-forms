@@ -64,7 +64,7 @@ class FormPageController extends ContentController implements TestOnly
         $readonlyfield->addHolderClass('readonlyfieldholderclass')->addExtraClass('readonlyfieldextraclass');
         $textareafield->addHolderClass('textareafieldholderclass')->addExtraClass('textareafieldextraclass');
         $textfield->addHolderClass('textfieldholderclass')->addExtraClass('textfieldextraclass');
-        $numericfield->addHolderClass('numericfieldholderclass')->addExtraClass('numericfieldholderclass');
+        $numericfield->addHolderClass('numericfieldholderclass')->addExtraClass('numericfieldextraclass');
 
         $actions = FieldList::create(FormAction::create('submit', 'Submit'));
         $required = RequiredFieldsValidator::create(['required']);
