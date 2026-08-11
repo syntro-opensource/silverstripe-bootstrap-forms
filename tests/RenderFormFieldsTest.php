@@ -194,4 +194,17 @@ class RenderFormFieldsTest extends FunctionalTest
         $this->assertStringContainsString('<input type="text" name="textfield" class="text form-control textfieldextraclass" id="Form_Form_textfield" />', $body);
     }
 
+    public function testNumericFieldRendering()
+    {
+        $formPage = $this->objFromFixture(FormPage::class, 'page');
+        $formPage->copyVersionToState('Stage', 'Live');
+
+        $page = $this->get('/form');
+        $body = $page->getBody();
+
+        $this->assertStringContainsString('<div id="Form_Form_textfield_Holder" class="textfieldholderclass">', $body);
+        $this->assertStringContainsString('<label class="form-label" for="Form_Form_textfield">textfield</label>', $body);
+        $this->assertStringContainsString('<input type="text" name="textfield" class="text form-control textfieldextraclass" id="Form_Form_textfield" />', $body);
+    }
+
 }
