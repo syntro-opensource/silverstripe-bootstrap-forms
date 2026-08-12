@@ -17,6 +17,7 @@ use Syntro\SilverstripeBootstrapForms\Forms\PhoneField;
 use Syntro\SilverstripeBootstrapForms\Forms\TextareaField;
 use Syntro\SilverstripeBootstrapForms\Forms\TextField;
 use Syntro\SilverstripeBootstrapForms\Forms\FieldGroup;
+use Syntro\SilverstripeBootstrapForms\Forms\NumericField;
 use Syntro\SilverstripeBootstrapForms\Forms\ReadonlyField;
 
 /**
@@ -51,6 +52,7 @@ class FormPageController extends ContentController implements TestOnly
             $readonlyfield = ReadonlyField::create('readonlyfield', 'readonlyfield'),
             $textareafield = TextareaField::create('textareafield', 'textareafield'),
             $textfield = TextField::create('textfield', 'textfield'),
+            $numericfield = NumericField::create('numericfield', 'numericfield'),
         );
 
         $checkboxfield->addHolderClass('checkboxfieldholderclass')->addExtraClass('checkboxfieldextraclass');
@@ -62,6 +64,7 @@ class FormPageController extends ContentController implements TestOnly
         $readonlyfield->addHolderClass('readonlyfieldholderclass')->addExtraClass('readonlyfieldextraclass');
         $textareafield->addHolderClass('textareafieldholderclass')->addExtraClass('textareafieldextraclass');
         $textfield->addHolderClass('textfieldholderclass')->addExtraClass('textfieldextraclass');
+        $numericfield->addHolderClass('numericfieldholderclass')->addExtraClass('numericfieldextraclass');
 
         $actions = FieldList::create(FormAction::create('submit', 'Submit'));
         $required = RequiredFieldsValidator::create(['required']);

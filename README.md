@@ -37,6 +37,7 @@ use Syntro\SilverstripeBootstrapForms\Forms\CheckboxField;
 use Syntro\SilverstripeBootstrapForms\Forms\CheckboxSetField;
 use Syntro\SilverstripeBootstrapForms\Forms\DropdownField;
 use Syntro\SilverstripeBootstrapForms\Forms\EmailField;
+use Syntro\SilverstripeBootstrapForms\Forms\NumericField;
 use Syntro\SilverstripeBootstrapForms\Forms\OptionsetField;
 use Syntro\SilverstripeBootstrapForms\Forms\TextareaField;
 use Syntro\SilverstripeBootstrapForms\Forms\TextField;
