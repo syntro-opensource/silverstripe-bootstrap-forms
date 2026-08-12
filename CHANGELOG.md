@@ -8,6 +8,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+<a name="6.1.0"></a>
+## [6.1.0] - 2026-08-12
+### 🍰 Added
+- NumericField ([#11](https://github.com/syntro-opensource/silverstripe-bootstrap-forms/issues/11))
+
+
 <a name="6.0.1"></a>
 ## [6.0.1] - 2025-10-28
 ### 🐞 Fixed
@@ -66,7 +72,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Merge pull request [#2](https://github.com/syntro-opensource/silverstripe-bootstrap-forms/issues/2) from syntro-opensource/dependabot/github_actions/codecov/codecov-action-3.1.0
 
 
-[Unreleased]: https://github.com/syntro-opensource/silverstripe-bootstrap-forms/compare/6.0.1...HEAD
+[Unreleased]: https://github.com/syntro-opensource/silverstripe-bootstrap-forms/compare/6.1.0...HEAD
+[6.1.0]: https://github.com/syntro-opensource/silverstripe-bootstrap-forms/compare/6.0.1...6.1.0
 [6.0.1]: https://github.com/syntro-opensource/silverstripe-bootstrap-forms/compare/6.0.0...6.0.1
 [6.0.0]: https://github.com/syntro-opensource/silverstripe-bootstrap-forms/compare/1.0.4...6.0.0
 [1.0.4]: https://github.com/syntro-opensource/silverstripe-bootstrap-forms/compare/1.0.3...1.0.4
